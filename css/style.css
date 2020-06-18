@@ -1,0 +1,210 @@
+/*
+<!---
+  prvtshow.online/xcamsclub
+  https://www.erosexotica.com/
+  ---->
+*/
+.cuerpo{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: #fff;
+}
+.logo{
+	width: 120px;
+}
+.imgnodes{
+	border: 0px;
+	width: 1200px;
+	height: 200px;
+}
+.flagsicons{
+	height: 10px;
+	width: 16px;
+}
+.caruselslides{
+	padding-top: 0px;
+	width: 1232px;
+	height: 600px;
+}
+.imgauto{
+	max-width: 100%;
+	height: auto;
+}
+.caja{
+	width: 100%;
+	height: 50%;
+	margin: 5px auto;
+	position: relative;
+}
+.caja::before, .caja::after{
+	content: '';
+	position: absolute;
+	z-index: -1;
+}
+.caja::before{
+	width: 100%;
+	height: 25%;
+	left: 0px;
+	bottom: 10px;
+	box-shadow: 1px 15px 10px #333;
+	-moz-transform: rotate(-3deg);
+}
+.mapoperaciones{
+	height: 100%;
+	width: 100%;
+}
+
+.heading{
+	font-size: 3.5rem;
+	letter-spacing: 3px;
+	margin-right: -2px;
+	margin-bottom: 3rem;
+	text-align: center;
+	color: #333;
+	position: relative;
+}
+.heading::after{
+	content: "";
+	width: 50rem;
+	height: .5rem;
+	background-color: #45e19f;
+	position: absolute;
+	bottom: -1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 2rem;
+}
+.card-wrapper{
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+.tarjeta{
+	width: 21rem; /*350px */
+	background-color: #ebeef8;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 2px 0;
+	box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+.tarjeta .card-img{
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+}
+.profile-img{
+	width: 10rem;
+	height: 10rem;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-top: -11rem;
+	z-index: 999;
+	border: 1rem solid #ebeef8;
+}
+.tarjeta h1{
+	font-size: 2rem;
+	color: #333;
+	margin: 1.5rem 0;
+}
+.job-title{
+	font-size: 1.5rem;
+	color: #777;
+	font-weight: 300;
+	margin: .1rem 0;
+}
+.about{
+	font-size: 14px;
+	margin: 5px 0;
+	text-align: left;
+	color: #333;
+}
+.tarjeta .btn{
+	padding: 1rem 2.5rem;
+	background-color: #445ae3;
+	border-radius: 2rem;
+	margin: 1rem 0;
+	color: #eee;
+	font-size: 1rem;
+	transition: all .3s;
+}
+.tarjeta .btn:hover{
+	transform: translateY(-2px);
+	box-shadow: .5rem .5rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+.tarjeta .btn:active{
+	transform: translateY(0);
+	box-shadow: none;
+}
+.social-media{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2rem 0;
+	margin-top: 1.5rem;
+	border-top: 1px solid rgba(0, 0, 0, .1);
+}
+.social-media i{
+	font-size: 3rem;
+	transition: color .5s;
+}
+.fa-linkedin{
+	color: #55acee;
+}
+.fa-twitter-square{
+	color: #55acee;
+}
+.fa-envelope-square{
+	color: #dd4b39;
+}
+.fa-linkedin:hover,.fa-twitter-square:hover,.fa-envelope-square:hover{
+	color: #45e19f;
+}
+@media screen and (min-width: 700px){
+	.card-wrapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.tarjeta{
+		margin: 2rem;
+		transition: transform.5s;
+	}
+	@@keyframes fadein {
+		from{
+			opacity: 0;
+		}
+		to{
+			opacity: 1;
+		}
+	}
+	.tarjeta:nth-child(1){
+		animation: fadein .5s .5s backwards;
+	}
+	.tarjeta:nth-child(2){
+		animation: fadein .5s .1s backwards;
+	}
+	.tarjeta:nth-child(3){
+		animation: fadein .5s 1.5s backwards;
+	}
+	.tarjeta:nth-child(4){
+		animation: fadein .5s 2s backwards;
+	}
+	.tarjeta:nth-child(5){
+		animation: fadein .5s 2.5s backwards;
+	}
+	.tarjeta:nth-child(6){
+		animation: fadein .5s 3s backwards;
+	}
+	.tarjeta:nth-child(7){
+		animation: fadein .5s 3s backwards;
+	}
+	.tarjeta:hover{
+		transform: scale(1:02);
+	}
+}
